@@ -1,0 +1,43 @@
+/* Style du formulaire */
+form {
+    background-color: white; /* Fond blanc */
+    border-radius: 16px; /* Bordure arrondie */
+    padding: 16px; /* Espace intérieur */
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f; /* Ombre portée */
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Style pour les labels */
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+/* Style pour les champs de saisie */
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+    width: 250px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box; /* Assure que padding/margin n'affectent pas la largeur */
+}
+
+/* Style pour le bouton de soumission */
+.btn-primary {
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Style du bouton en cas de formulaire non valide */
+form:invalid input[type="submit"] {
+    background-color: gray;
+}

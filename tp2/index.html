@@ -1,40 +1,50 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>TP2</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <!-- Place favicon.ico in the root directory -->
-
-  <style>
-    body {
-      background-color: #e9ebee;
-      font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco",
-        "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-      font-size: 16px;
-      margin: 0 auto;
-      max-width: 800px;
-    }
-  </style>
-
-  <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-  <!--<link rel="stylesheet" href="style.css">-->
-  <!--<script src="js/main.js"></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP #2</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <nav>
-    <a href="..">🏠 Index</a> / TP2
-  </nav>
-  <h1>tp2</h1>
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <img src="../galilee.png" alt="Logo Galilee" />
-</body>
 
+    <h1>TP #2</h1>
+
+    <!-- Formulaire avec l'attribut action vers action.html et méthode GET -->
+    <form action="action.html" method="get">
+        <!-- Champ de saisie pour le nom -->
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required>
+        <span>✔</span>
+        <br><br>
+
+        <!-- Champ de saisie pour le prénom -->
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" required>
+        <span>✔</span>
+        <br><br>
+
+        <!-- Champ de saisie pour la date de naissance -->
+        <label for="date-naissance">Date de naissance</label>
+        <input type="date" id="date-naissance" name="date-naissance" required>
+        <span>✔</span>
+        <br><br>
+
+        <!-- Champ de saisie pour l'adresse -->
+        <label for="adresse">Adresse</label>
+        <input type="text" id="adresse" name="adresse" required>
+        <span>✔</span>
+        <br><br>
+
+        <!-- Champ de saisie pour l'email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <span>✔</span>
+        <br><br>
+
+        <!-- Bouton d'envoi avec classe btn-primary -->
+        <input type="submit" value="Envoyer" class="btn-primary">
+    </form>
+
+</body>
 </html>
