@@ -1,0 +1,82 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Couleur de fond gris clair */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0); /* Gradient de couleur pour l'arrière-plan */
+}
+
+/* Style des en-têtes */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+
+/* Style des tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #ffffff; /* Fond blanc pour les tableaux */
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Pseudo-classes pour les lignes impaires et les effets de survol */
+tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Couleur de fond pour les lignes impaires */
+}
+
+tr:hover {
+    background-color: #ddd; /* Changer la couleur de fond au survol */
+}
+
+/* Liens avec couleur de texte orange au survol */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6600; /* Texte orange au survol */
+}
+
+/* Agrandir les images au survol (deux techniques) */
+.experience-logo img {
+    width: 40px;
+    transition: all 0.3s ease;
+}
+
+.experience-logo img:hover {
+    transform: scale(1.5); /* Agrandir l'image en utilisant une transformation */
+}
+
+/* Media query pour les petits écrans */
+@media only screen and (max-width: 600px) {
+    body {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    }
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    
+}
